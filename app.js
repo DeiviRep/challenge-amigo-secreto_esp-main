@@ -19,6 +19,8 @@ function limpiarCaja(){
 
 function actualizarListaAmigos(){
     let lista = document.getElementById("listaAmigos");
+    let cantidad = document.getElementById("counter");
+    cantidad.textContent = amigos.length;
     lista.innerHTML = "";
     for (let i = 0; i < amigos.length; i++) {
         const amigo = amigos[i];
